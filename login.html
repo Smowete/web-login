@@ -1,0 +1,65 @@
+<!-- comments are in comment.txt -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Login</title>
+
+		<link href="login.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="ajax-promise.js"></script>
+		<script type="text/javascript" src="login.js"></script>
+	</head>
+	
+	<body>
+	    <main id="mainArea">
+	        <h1 id="doing">Sign In</h1>
+	        <div id="username">
+	            <lable for="usernameInput">Username:</lable><br />
+	            <input type="text" id="usernameInput" class="loginInput"/>
+	        </div>
+	        <div id="password">
+	            <lable for="passwordInput">Password:</lable><br />
+	            <input type="password" id="passwordInput" class="loginInput"/>
+	        </div>
+	        <div id="password2" class="hidden">
+	            <lable for="passwordInput2">Re-enter Password:</lable><br />
+	            <input type="password" id="passwordInput2" class="loginInput"/>
+	        </div>
+	        <div id="name" class="hidden">
+	        	<lable for="nameInput">Name:</lable><br />
+	            <input type="text" id="nameInput" class="loginInput"/>
+			</div>
+			<div id="studentNo" class="hidden">
+	        	<lable for="studentNoInput">Student Number:</lable><br />
+	            <input type="text" id="studentNoInput" class="loginInput"/>
+			</div>
+			<div id="gender" class="hidden">
+				<lable>Gender:</lable>
+				<input type="radio" id="genderInput1" name="gender" value="1" class="loginInput" checked="checked">Male
+				<input type="radio" id="genderInput2" name="gender" value="2" class="loginInput">Female<br>
+			</div>
+			<div id="age" class="hidden">
+	        	<lable for="ageInput">Age:</lable><br />
+	            <input type="number" id="ageInput" class="loginInput"/>
+			</div>
+			
+			<div id="admin" class="hidden">
+	        	<lable for="adminInput">Administrator?</lable>
+	            <input type="checkbox" id="adminInput" class="loginInput"/>
+			</div>
+			
+	        <br />
+	        <button id="loginButton">Sign In</button>
+	        <button id="signUpButton">Sign Up</button>
+	        <button id="submitButton" class="hidden">Submit</button>
+	        <p id="loginResult"></p>
+	    </main>
+	    
+	    
+	    
+	</body>
+    
+    
+    
+</html>
